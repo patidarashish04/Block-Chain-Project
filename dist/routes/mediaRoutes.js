@@ -6,6 +6,4 @@ const mediaUploadValidation_1 = require("../validation/MediaUploadsValidation/me
 const router = (0, express_1.Router)();
 router.get("/get", mediaUploadValidation_1.getmediaDataValidation, mediaController_1.getMedia);
 router.post("/", mediaUploadValidation_1.getmediaDataValidation, mediaController_1.postmediaData);
-// router.post("/",getmediaDataValidation, getmediaData);
-// router.post("/",getmediaDataValidation, getmediaData);
 exports.default = router;

@@ -44,23 +44,6 @@ const postmediaData = (req, res, next) => __awaiter(void 0, void 0, void 0, func
     }
 });
 exports.postmediaData = postmediaData;
-//* getById
-// const getProduct = (async (req, res) => {
-//   const { id: productId } = req.params;
-//   const { userId } = req.user;
-//   const product = await MediaData.findOne({
-//     _id: productId,
-//     createdBy: userId,
-//   });
-//   if (!product) {
-//     throw new NotFoundError(`No Product with id ${productId}`);
-//   }
-//   res.status(StatusCodes.OK).json({
-//     msg: `Product with id : ${productId} found successfully`,
-//     status: StatusCodes.OK,
-//     productDetails: product,
-//   });
-// })
 module.exports = {
     getMedia: exports.getMedia,
     postmediaData: exports.postmediaData
